@@ -13,11 +13,11 @@
 \begin{document}
 \begin{center}
 {\LARGE Benson (Zhen Cong) Chen}\\
-(647) 923-2685 \;|\; \href{mailto:zc3chen@uwaterloo.ca}{zc3chen@uwaterloo.ca} \;|\; \href{https://linkedin.com/in/benson-chen-57b5261b5}{linkedin.com/in/benson-chen-57b5261b5}
+(647) 923-2685 \;|\; \href{mailto:zc7485@utexas.edu}{zc7485@utexas.edu} \;|\; \href{https://linkedin.com/in/benson-chen-57b5261b5}{linkedin.com/in/benson-chen-57b5261b5}
 \end{center}
 
 \vspace{0.5em}
-AI Engineer specializing in low-level GPU optimization for machine learning systems across mobile, desktop, and safety-critical environments. Llama.cpp contributor with cross-vendor GPU experience (Qualcomm, Nvidia, Apple) and a track record of measurable wins---1.5$\times$ Qwen3 inference speedup on mobile GPUs, 60\% runtime reduction on GEMM kernels, and BitNet ternary-quantization support across heterogeneous GPUs.
+AI Engineer specializing in low-level GPU optimization for machine learning systems across mobile, desktop, and safety-critical environments. Llama.cpp contributor with cross-vendor GPU experience and a track record of measurable wins---1.5$\times$ Ternary Qwen3 inference speedup on mobile GPUs, 60\% runtime reduction on GEMM kernels, and BitNet ternary-quantization support across heterogeneous GPUs.
 
 \section*{Skills \& Competencies}
 \begin{minipage}[t]{0.48\textwidth}
@@ -36,15 +36,16 @@ AI Engineer specializing in low-level GPU optimization for machine learning syst
 \section*{Work Experience}
 \textbf{AI Research Engineer (Edge Inference)} \hfill \textbf{Tether.io} \hfill \textbf{JAN 2026 -- PRESENT}
 \begin{itemize}
-  \item Develop and optimize kernels, quantization workflows, and fine-tuning systems for LLMs/SLMs across mobile and desktop GPUs. 
+  \item Develop and optimize kernels, quantization workflows, and fine-tuning systems for LLMs across mobile and desktop GPUs. 
   \item Optimized Qwen3 model on mobile Adreno 840 GPU to achieve 1.5$\times$ speedup compared to the previous version.
   \item Added support for BitNet heterogeneous GPU inference in llama.cpp by enabling ternary quantization with GPU acceleration using Vulkan and Metal.
   \item Authored a research paper documenting the implementation of BitNet LoRA fine-tuning on heterogeneous GPUs.
+  \item Research and benchmark current SOTA LLM inference technique to integrate into the company's edge inference system.
 \end{itemize}
 
 \textbf{ML Software Developer (ML Inference)} \hfill \textbf{Lynx Software} \hfill \textbf{JAN 2024 -- DEC 2025}
 \begin{itemize}
-  \item Benchmarked and optimized GEMM operations on an IMG GPU, reducing application runtime by 60\% through memory tiling, register tiling, and thread coarsening; validated bottleneck-level gains using a custom profiling tool.
+  \item Benchmarked and optimized GEMM operations on an Imagination GPU, reducing application runtime by 60\% through memory tiling, register tiling, and thread coarsening; validated bottleneck-level gains using a custom profiling tool.
   \item Enabled efficient linear quantization for matrix multiplication to improve computational performance.
   \item Optimized GPU computation for safety-critical machine learning operations such as convolution.
   \item Implemented a testing library for the ML inference engine to thoroughly test each ML operation for various inputs using PyTorch.
@@ -54,35 +55,26 @@ AI Engineer specializing in low-level GPU optimization for machine learning syst
 
 \textbf{ML Software Developer (ML Inference)} \hfill \textbf{CoreAVI (Lynx Software)} \hfill \textbf{MAY 2023 -- AUG 2023}
 \begin{itemize}
-  \item Developed a custom machine learning engine for safety-critical environments in C.
-  \item Implemented various machine learning operations using Vulkan compute shaders conforming to the NNEF specification.
+  \item Implemented various machine learning operations using Vulkan compute shaders conforming to the NNEF specification into company's custom machine learning engine.
   \item Designed debugging tools for developers working on the machine learning engine.
   \item Built demo projects running VGG16 and VGG18 vision models on the company's machine learning framework to perform object detection on Intel and AMD GPUs.
 \end{itemize}
 
-\textbf{ML Software Developer (ML Inference)} \hfill \textbf{CoreAVI (Lynx Software)} \hfill \textbf{SEPT 2023 -- DEC 2023}
+\textbf{ML Software Developer (ML Inference)} \hfill \textbf{CoreAVI (Lynx Software)} \hfill \textbf{SEPT 2022 -- DEC 2022}
 \begin{itemize}
   \item Enhanced the machine learning engine to support additional ML architectures.
-  \item Wrote Python scripts to automate the testing and build pipeline.
-  \item Improved and debugged the machine learning inference engine.
   \item Refined the NNEF compiler to parse NNEF documents according to the NNEF specification.
 \end{itemize}
 
-\textbf{Compiler Software Engineer} \hfill \textbf{Huawei} \hfill \textbf{SEPT 2023 -- DEC 2023}
+\textbf{Compiler Software Engineer} \hfill \textbf{Huawei} \hfill \textbf{SEPT 2021 -- DEC 2021}
 \begin{itemize}
   \item Generated and preprocessed training data for the AI compiler used to predict the best optimization for LLVM IR.
   \item Created an API for an AI compiler ML model to perform predictions on LLVM IR using SSH and network sockets.
 \end{itemize}
 
 \section*{Education}
-\textbf{THE UNIVERSITY OF TEXAS AT AUSTIN} \hfill PRESENT
-\begin{itemize}
-  \item Master of Computer Science, Candidate
-\end{itemize}
+\textbf{The University of Texas at Austin} \hfill Master of Computer Science, Candidate \hfill Present
 
-\textbf{UNIVERSITY OF WATERLOO} \hfill 2023
-\begin{itemize}
-  \item Bachelor of Computer Science (Co-operative Program), Dean's Honour
-\end{itemize}
+\textbf{University of Waterloo} \hfill Bachelor of Computer Science (Co-operative Program), Dean's Honour \hfill 2023
 
 \end{document}
