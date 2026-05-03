@@ -1,0 +1,83 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\setlist[itemize]{leftmargin=*, nosep}
+\begin{document}
+\begin{center}
+{\LARGE Benson (Zhen Cong) Chen}\\
+(647) 923-2685 \;|\; \href{mailto:zc3chen@uwaterloo.ca}{zc3chen@uwaterloo.ca} \;|\; \href{https://linkedin.com/in/benson-chen-57b5261b5}{linkedin.com/in/benson-chen-57b5261b5}
+\end{center}
+
+\vspace{0.5em}
+AI Engineer specializing in low-level GPU optimization for machine learning system across mobile, desktop, and safety-critical environments. Llama.cpp contributor with cross-vendor GPU experience (Qualcomm, Nvidia, Apple) and a track record of measurable wins---1.5$\times$ Qwen3 inference on mobile GPUs, 60\% runtime reduction on GEMM kernels, and BitNet ternary-quantization support across heterogeneous GPUs.
+
+\section*{Skills \& Competencies}
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}
+  \item Programming languages: C, C++, Python, Java
+  \item ML API: Vulkan, CUDA, Metal, PyTorch
+\end{itemize}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{itemize}
+  \item LLM: Llama.cpp, Safety Critical Environment, Extreme Quantization, GPU Kernel Optimization, AI Inference, Edge Deployment
+\end{itemize}
+\end{minipage}
+
+\section*{Work Experience}
+\textbf{AI RESEARCH ENGINEER (EDGE INFERENCE)} \hfill TETHER.IO \hfill JAN 2026 -- PRESENT
+\begin{itemize}
+  \item Develop and optimize kernels, quantization workflows, and fine-tuning systems for LLMs/SLMs across mobile and desktop GPUs. 
+  \item Optimzed Qwen3 model on Andreno 840 GPU (Samsung S26 Ultra) to achieve 2x speed up compared to previous version.
+  \item Added support for BitNet Heterogeneous GPU inference in llama.cpp by enabling ternary quantization in llama.cpp with GPU acceleration using Vulkan and Metal.
+  \item Authored a research paper documenting the implementation of BitNet LoRA Fine-Tuning using Heterogeneous GPU.
+\end{itemize}
+
+\textbf{ML SOFTWARE DEVELOPER (MODEL INFERENCE)} \hfill COREAVI (LYNX) \hfill JAN 2024 -- DEC 2025
+\begin{itemize}
+  \item Performed benchmarking and optimization on GEMM operation for specific GPU and reduced application runtime by 80\% for specific input size using optimization techniques such as memory tiling, register tiling, and thread coarsening.
+  \item Built data processing pipeline for internal LLM tool.
+  \item Enabled efficient linear quantization for matrix multiplication and improved computational performance.
+  \item Automated software testing by leveraging Jenkins and Python script.
+  \item Optimized GPU computation for safety-critical machine learning operations such as convolution.
+\end{itemize}
+
+\textbf{ML SOFTWARE DEVELOPER (MODEL INFERENCE)} \hfill COREAVI (LYNX) \hfill MAY 2023 -- AUG 2023
+\begin{itemize}
+  \item Developed machine learning engine in a safety-critical environment.
+  \item Implemented testing library for ML inference engine to thoroughly test each ML operation for various inputs using PyTorch.
+  \item Created debugging tools, improving developer productivity and troubleshooting accuracy.
+  \item Built Resnet18, VGG16, VGG18, and other machine learning models using both PyTorch and native ML inference engine.
+  \item Debugged large codebase, resolving issues and improving system reliability and performance.
+  \item Refined NNEF compiler, ensuring accurate parsing and adherence to specifications.
+\end{itemize}
+
+\textbf{COMPILER DEVELOPER} \hfill HUAWEI COMPILER LAB \hfill SEP 2021 -- DEC 2021
+\begin{itemize}
+  \item Created an API for machine learning model to perform prediction for LLVM IR using SSH and network sockets.
+  \item Generated and preprocessed training data for machine learning model.
+  \item Added features on performance analysis infrastructure to improve ML model performance.
+  \item Generated automated tests for compiler.
+\end{itemize}
+
+\section*{Education}
+\textbf{THE UNIVERSITY OF TEXAS AT AUSTIN} \hfill PRESENT
+\begin{itemize}
+  \item Master of Computer Science, Candidate
+\end{itemize}
+
+\textbf{UNIVERSITY OF WATERLOO} \hfill 2023
+\begin{itemize}
+  \item Bachelor of Computer Science (Co-operative Program), Dean's Honour
+\end{itemize}
+
+\end{document}
