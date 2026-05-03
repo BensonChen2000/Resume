@@ -17,7 +17,7 @@
 \end{center}
 
 \vspace{0.5em}
-AI Engineer specializing in low-level GPU optimization for machine learning system across mobile, desktop, and safety-critical environments. Llama.cpp contributor with cross-vendor GPU experience (Qualcomm, Nvidia, Apple) and a track record of measurable wins---1.5$\times$ Qwen3 inference on mobile GPUs, 60\% runtime reduction on GEMM kernels, and BitNet ternary-quantization support across heterogeneous GPUs.
+AI Engineer specializing in low-level GPU optimization for machine learning systems across mobile, desktop, and safety-critical environments. Llama.cpp contributor with cross-vendor GPU experience (Qualcomm, Nvidia, Apple) and a track record of measurable wins---1.5$\times$ Qwen3 inference speedup on mobile GPUs, 60\% runtime reduction on GEMM kernels, and BitNet ternary-quantization support across heterogeneous GPUs.
 
 \section*{Skills \& Competencies}
 \begin{minipage}[t]{0.48\textwidth}
@@ -34,39 +34,44 @@ AI Engineer specializing in low-level GPU optimization for machine learning syst
 \end{minipage}
 
 \section*{Work Experience}
-\textbf{AI RESEARCH ENGINEER (EDGE INFERENCE)} \hfill TETHER.IO \hfill JAN 2026 -- PRESENT
+\textbf{AI Research Engineer (Edge Inference)} \hfill \textbf{Tether.io} \hfill \textbf{JAN 2026 -- PRESENT}
 \begin{itemize}
   \item Develop and optimize kernels, quantization workflows, and fine-tuning systems for LLMs/SLMs across mobile and desktop GPUs. 
-  \item Optimzed Qwen3 model on Andreno 840 GPU (Samsung S26 Ultra) to achieve 2x speed up compared to previous version.
-  \item Added support for BitNet Heterogeneous GPU inference in llama.cpp by enabling ternary quantization in llama.cpp with GPU acceleration using Vulkan and Metal.
-  \item Authored a research paper documenting the implementation of BitNet LoRA Fine-Tuning using Heterogeneous GPU.
+  \item Optimized Qwen3 model on mobile Adreno 840 GPU to achieve 1.5$\times$ speedup compared to the previous version.
+  \item Added support for BitNet heterogeneous GPU inference in llama.cpp by enabling ternary quantization with GPU acceleration using Vulkan and Metal.
+  \item Authored a research paper documenting the implementation of BitNet LoRA fine-tuning on heterogeneous GPUs.
 \end{itemize}
 
-\textbf{ML SOFTWARE DEVELOPER (MODEL INFERENCE)} \hfill COREAVI (LYNX) \hfill JAN 2024 -- DEC 2025
+\textbf{ML Software Developer (ML Inference)} \hfill \textbf{Lynx Software} \hfill \textbf{JAN 2024 -- DEC 2025}
 \begin{itemize}
-  \item Performed benchmarking and optimization on GEMM operation for specific GPU and reduced application runtime by 80\% for specific input size using optimization techniques such as memory tiling, register tiling, and thread coarsening.
-  \item Built data processing pipeline for internal LLM tool.
-  \item Enabled efficient linear quantization for matrix multiplication and improved computational performance.
-  \item Automated software testing by leveraging Jenkins and Python script.
+  \item Benchmarked and optimized GEMM operations on an IMG GPU, reducing application runtime by 60\% through memory tiling, register tiling, and thread coarsening; validated bottleneck-level gains using a custom profiling tool.
+  \item Enabled efficient linear quantization for matrix multiplication to improve computational performance.
   \item Optimized GPU computation for safety-critical machine learning operations such as convolution.
+  \item Implemented a testing library for the ML inference engine to thoroughly test each ML operation for various inputs using PyTorch.
+  \item Designed and built a data processing pipeline for an internal LLM tool.
+  \item Automated software testing by leveraging Jenkins and Python scripts.
 \end{itemize}
 
-\textbf{ML SOFTWARE DEVELOPER (MODEL INFERENCE)} \hfill COREAVI (LYNX) \hfill MAY 2023 -- AUG 2023
+\textbf{ML Software Developer (ML Inference)} \hfill \textbf{CoreAVI (Lynx Software)} \hfill \textbf{MAY 2023 -- AUG 2023}
 \begin{itemize}
-  \item Developed machine learning engine in a safety-critical environment.
-  \item Implemented testing library for ML inference engine to thoroughly test each ML operation for various inputs using PyTorch.
-  \item Created debugging tools, improving developer productivity and troubleshooting accuracy.
-  \item Built Resnet18, VGG16, VGG18, and other machine learning models using both PyTorch and native ML inference engine.
-  \item Debugged large codebase, resolving issues and improving system reliability and performance.
-  \item Refined NNEF compiler, ensuring accurate parsing and adherence to specifications.
+  \item Developed a custom machine learning engine for safety-critical environments in C.
+  \item Implemented various machine learning operations using Vulkan compute shaders conforming to the NNEF specification.
+  \item Designed debugging tools for developers working on the machine learning engine.
+  \item Built demo projects running VGG16 and VGG18 vision models on the company's machine learning framework to perform object detection on Intel and AMD GPUs.
 \end{itemize}
 
-\textbf{COMPILER DEVELOPER} \hfill HUAWEI COMPILER LAB \hfill SEP 2021 -- DEC 2021
+\textbf{ML Software Developer (ML Inference)} \hfill \textbf{CoreAVI (Lynx Software)} \hfill \textbf{SEPT 2023 -- DEC 2023}
 \begin{itemize}
-  \item Created an API for machine learning model to perform prediction for LLVM IR using SSH and network sockets.
-  \item Generated and preprocessed training data for machine learning model.
-  \item Added features on performance analysis infrastructure to improve ML model performance.
-  \item Generated automated tests for compiler.
+  \item Enhanced the machine learning engine to support additional ML architectures.
+  \item Wrote Python scripts to automate the testing and build pipeline.
+  \item Improved and debugged the machine learning inference engine.
+  \item Refined the NNEF compiler to parse NNEF documents according to the NNEF specification.
+\end{itemize}
+
+\textbf{Compiler Software Engineer} \hfill \textbf{Huawei} \hfill \textbf{SEPT 2023 -- DEC 2023}
+\begin{itemize}
+  \item Generated and preprocessed training data for the AI compiler used to predict the best optimization for LLVM IR.
+  \item Created an API for an AI compiler ML model to perform predictions on LLVM IR using SSH and network sockets.
 \end{itemize}
 
 \section*{Education}
